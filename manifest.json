@@ -1,0 +1,20 @@
+{
+  "manifestVersion": 2,
+  "id": "hana-video-evidence",
+  "name": "Hana视频读取",
+  "version": "0.1.1",
+  "description": "本地视频概览、动作前后补看和可回指子帧证据；基于 dsh-video-storyboard action.3。实验版，不承诺准确率提升。",
+  "entry": "index.js",
+  "icon": "assets/icon.svg",
+  "minAppVersion": "1.5.7-beta",
+  "capabilities": ["app/tools.expose-to-model", "app/resources.read", "app/process.spawn"],
+  "contributes": {
+    "settings": {
+      "title": "视频读取 · 本地执行",
+      "schema": {"properties": {
+        "ffmpegPath": {"type":"string", "default":"", "title":"FFmpeg 路径", "description":"留空使用 PATH；不自动安装或下载。"},
+        "ffprobePath": {"type":"string", "default":"", "title":"FFprobe 路径", "description":"留空使用 PATH；应与 FFmpeg 来自同一发行包。"}
+      }}
+    }
+  }
+}

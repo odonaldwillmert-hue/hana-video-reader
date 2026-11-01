@@ -1,0 +1,21 @@
+# Local development residue
+node_modules/
+dist/
+tests/tmp/
+
+# Local secrets and logs
+.env
+.env.*
+*.log
+cookies.json
+auth.json
+*.pem
+*.key
+*.pfx
+*.p12
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

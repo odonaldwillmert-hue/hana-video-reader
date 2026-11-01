@@ -16,5 +16,5 @@ export default defineApp(async sdk => {
   const {runStoryboard,formatManifest}=await import('./vendor/dsh-video-storyboard/src/pipeline.js');
   const execute=createVideoTool(sdk,{run:runStoryboard,format:formatManifest});
   await sdk.tools.register({name:'video_evidence',description,parameters,sessionPermission:permission,execute});
-  await sdk.logger.info('Hana视频读取 0.1.1 ready; engine action.3; audio/network acquisition disabled');
+  await sdk.logger.info('Hana视频读取 0.1.2 ready; engine action.3; audio/network acquisition disabled');
 });
